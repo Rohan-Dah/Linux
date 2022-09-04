@@ -1,0 +1,29 @@
+Users in Linux:
+
+1) Regular user:
+He has a home directory of himself in what he has complete control (reading, writing, editing)
+if the system has multiple users then he cannot access home directories of other users. This is his restriction
+
+2) Super user / Root user / Admin:
+He has access to all of the directories, has all the permissions, can delete any file in any directory.
+If a user has root access then before giving any command if we write sudo, the system acknowledges that the person who is giving the command is the root user and he has the authority. It would be like:
+sudo mkdir
+if we write sudo su in the terminal then the system assumes that you are a root user and you will have the permissions.
+
+3) Service user:
+this user is has his own account if for a particular server and work on that. Lets say it can be apache2.
+
+Absolute path:
+it is the path from root directory
+
+Reletive path:
+It is the path from current directory you are in or pwd.
+
+If you want to jump to the directory that child nodes to the current directory then you can use relative path but if you want jump from one parent direcory to another then you have to use absolute path. If the directory dosent exist where you want to jump, system will throw error.
+
+
+Class 
+For a given file: r:read
+		  w: write
+		  e: execute
+

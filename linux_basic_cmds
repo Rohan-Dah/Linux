@@ -1,0 +1,141 @@
+On terminal
+
+ls: Displays the content of the current folder you currently are in.
+
+Unix, Linux, Ubuntu:
+Ubuntu is the the distribution of linux.
+Unix is the properitory OS by which Linux was made. Unix ko back of the mind rakh ke Linux was made. Unix is a purana OS.
+
+Two types of interfaces: CLI(Command Line Interface) and GUI(Graphical User Interface).
+Windows GUI ko madde nazar rakh ke banaya gaya hai. Linux has both them with good user experience.
+
+Current Directory:
+pwd: Print working directory. Returns the directory you currently are in.
+
+/: this is the root directory of linux. It has tree strcuture where / is the root node.
+
+cd is change directory
+cd x : x can be replaced by any directory. cd command takes you to that directory. cd / will take you to root directory.
+Now when ill be in the root directory ls will show all of its child nodes.
+By pwd you will get to know who the parent is and by ls you will get to know who the child is.
+
+cd .. : used as a back button.
+
+Tab can be used as autofill.
+
+Create new folder:
+mkdir: Create new directory/folder.
+
+Cut command
+mv: Moves a file from one place to another.
+mv command can also be used to rename files.. like: mv old_filename.txt new_filename.txt
+
+Create new .txt file
+touch: creates a blank plain text file.
+
+Copy command
+cp: Copy a file from one place to another.
+
+mv and cp has a structure like mv x y    cp x y
+x is what file do you want to move/copy and y is where you want to move copy.
+
+rmdir: Deletes a directory. This can be hidden or anything but a directory
+rmdir <filename>
+-r is the command to recursively delete everything in that directory. 
+rmdir -r <filename>
+
+rm: Deletes a file. hidden or anything.
+rm <filename.xxx>
+rm command can have different variations as well. Like rm -i filename
+This command is an interactive delete approach. It will ask whether y or n.
+
+ 
+sudo: Its the the thing you type when you wish to give system the command as super user.
+sudo su: System will make you the super user.
+apt: It is used when you want to install any software.
+In the versions prior to ubuntu 16 apt-get was used but later the command is shrunk and only apt can be used to serve the same purpose.
+apt-get (verions prior to ubuntu 16) apt (after 16)
+apt-get command works in both tho. For before as well as for later versions.
+
+update: It shows the software that can be updated 
+upgrade: It upgrades that can be upgraded.
+
+-R : It displays directory ke andar ke directory ke andar ke directory ke andar ke content until it reaches bottom.
+this is a recursive call.
+It can be used with ls like 'ls -R'
+
+Hidden files are stared with the extension .xxx
+Eg: .rohan : here rohan is a hidden file inside that directory and it wont be displayed by ls.
+
+To display hidden files as well with ls you need to type ls -a.
+-a displays hidden files in that directory as well.
+
+ls -lart shows overall files and folders in the path including hidden files and shows the permission of file accessing
+-l: shows all the files on the path.
+-a: shows all the files including hidden files.
+-r: reverses the list of files and folders 
+-t: Sorts files and folders by a time
+
+clear: It will make the terminal appear less cluttered.
+history: It will show you the command history.
+never issue password as a command or else someone might be able to read your password by just seeing the command history.
+
+echo: Used to display the string following it.
+printf "x" : This is used to display the string in the double quotes. \n can also be added.
+echo and printf can be interchanagbly used. 
+Filename is case sensitive, that means rohan and ROHAN are different.
+
+chmod:
+this is the command used to change permission for a particualar file.
+A file can have 3 permission levels: 1) User 2) Group 3) Public
+chmod is used to make changes in the permissions among the above.
+Firstly you gotta open chmod calculator online. There set the permission you want checking the respective boxes.
+then you will as a result get a 3 digit number code. Like 764, 554 etc.
+This will be the decimal conversion of your binary checks.
+Suppose you have Read, Write, Execute for user and you have given permission for all. That means it will be a 1,1,1 for all of them. This as a decimal will be 7 (111 is 7 in decimal)
+Similar goes for group and and other permission.
+This is how a 3 digit code is generated.
+The syntax of chmod will be:
+chmod xxx file_name 
+chmod 764 1.txt
+
+top: 
+Top command is used to show all the top processes currently running in your system  that are consuming most of the resources.
+TO come out top, press q
+
+ps:
+This lists all the currently running processes.
+
+ps -a 
+This lists currently running background processes as well.
+
+kill:
+kill command is used to kill the process you want to kill which is running rn.
+kill <process id>
+you can get process id by using top command... It is displayed as pid there.
+
+vim:
+It is a text editor that helps you update the content in a file.
+to write in a file you need to enter the command vim file-name (vim 1.txt)
+It will then open the file in vim. 
+Then firstly none of your words will be typed until you press i. This means vim is in the insert mode.
+Then after you are done typing you need to press esc. This means you are outside your insert mode. 
+You then have to press : (colun) and then either wq or q. 
+wq : save and exit 
+q : exit without saving.
+
+Now if you mistakenly update or delete the file that you have opened and dont want to save changes then press esc to comeout from insert mode(obviously), then colun and q!
+q! : Exit without any changes made.
+
+cat <name.txt> is the command used to display the content in that most probably txt file.
+
+who:
+who is the current user
+
+man <command_name>
+This is used to display a user manual of any of the command.
+man ls
+
+
+
+
